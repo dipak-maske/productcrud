@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+
+<body>
+<center>
+  <div class="container">
+    <h2>PRODUCT CRUD Example with jQuery +Fetch API</h2>
+
+    <div align="right"><button class="btn btn-info" onclick="newProduct()">NEW PRODUCT</button></div>
+    <hr />
+
+    <div class="container" id="productForm">
+        <h2> Product Form</h2>
+        <form action="http://localhost:3000/pUpdate/<%= data[0].productId %>" method="post">
+          <div class="form-group">
+            <label for="id"><b>Category ID :</b></label>
+            <input type="text" class="form-control" id="id" name="fk_column_name">
+          </div>
+          <div class="form-group">
+              <label for="id"><b>Product Name :</b></label>
+              <input type="text" class="form-control" id="id" name="productName">
+            </div>
+          <hr />
+          <button type="submit"class="btn btn-info">Add Product</button>
+        </form>
+      </div>
+      <font color="green" size="6"></font>
+      </div>
+      <hr>
+      <button  type="button" class="btn btn-secondary btn-lg" ><a href="/home" style="color:black;">Home</a></button>
+      <hr>
+    </center>
+</body>
+
+</html>
